@@ -1,0 +1,204 @@
+/* RESET BÁSICO */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ESTILO PADRÃO */
+body {
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* TOPO */
+.topo {
+    background: #007bff;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.topo h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.topo p {
+    font-size: 1.2rem;
+}
+
+/* PÁGINA INICIAL */
+.landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.ebook-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    background: #1e1e1e;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.ebook-container img {
+    width: 300px;
+    border-radius: 8px;
+}
+
+.ebook-info h2 {
+    margin-bottom: 1rem;
+}
+
+.ebook-info ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.ebook-info li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+/* BOTÕES */
+button,
+.btn {
+    background: #00a650;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+    text-align: center;
+}
+
+button:hover,
+.btn:hover {
+    background: #008f47;
+}
+
+/* FOOTER */
+footer {
+    background: #1e1e1e;
+    color: #aaa;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* FORMULÁRIOS */
+body.cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+}
+
+.form-box {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.form-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.form-box input::placeholder {
+    color: #ccc;
+}
+
+.form-box a {
+    display: inline-block;
+    margin-top: 20px;
+    background: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.form-box a:hover {
+    background: #0056b3;
+}
+
+/* BOTÃO PARA BAIXAR E-BOOK */
+.container-ebook {
+    text-align: center;
+    padding: 30px;
+    background-color: #111;
+    color: #fff;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 40px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+.descricao {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #ccc;
+    line-height: 1.4;
+}
+
+.imagem-ebook img {
+    width: 150px;
+    margin: 10px 0 20px 0;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.botao-compra {
+    background-color: #00c86f;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao-compra:hover {
+    background-color: #02a357;
+}
+
+.preco {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #00c86f;
+}
+
+.preco s {
+    color: #aaa;
+}
+
+.frase-final {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}

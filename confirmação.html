@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirmação de Cadastro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+        .box {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(5px);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Cadastro Confirmado ✅</h1>
+        <p>Agora clique abaixo para realizar o pagamento e liberar o acesso ao seu E-book:</p>
+
+        <!-- Botão do Mercado Pago -->
+        <script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
+            data-preference-id="SEU-ID-DE-PAGAMENTO-AQUI"
+            data-source="button">
+        </script>
+    </div>
+</body>
+</html>

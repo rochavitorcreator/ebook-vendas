@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Oferta Especial - Upsell</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0d1117;
+            color: #f0f6fc;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .upsell-container {
+            display: flex;
+            gap: 40px;
+            max-width: 900px;
+            background-color: #161b22;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            align-items: center;
+        }
+
+        .imagem-ebook img {
+            max-width: 250px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .conteudo-ebook {
+            max-width: 500px;
+        }
+
+        .conteudo-ebook h1 {
+            color: #58a6ff;
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+
+        .conteudo-ebook p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .botao-compra {
+            display: inline-block;
+            background-color: #3fb950;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .botao-compra:hover {
+            background-color: #2ea043;
+        }
+
+        .garantia {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #8b949e;
+        }
+
+        .botao-recusar {
+            display: inline-block;
+            margin-top: 20px;
+            color: #8b949e;
+            font-size: 14px;
+            text-decoration: underline;
+            transition: 0.3s;
+        }
+
+        .botao-recusar:hover {
+            color: #f0f6fc;
+        }
+    </style>
+</head>
+<body>
+    <section class="upsell-container">
+        <div class="imagem-ebook">
+            <img src="./assets/capa-ebook.png" alt="Capa do Ebook">
+        </div>
+
+        <div class="conteudo-ebook">
+            <h1>🚀 Acelere Seus Resultados com Este Material Exclusivo!</h1>
+            <p>Por apenas <strong>R$19,90</strong>, você terá acesso a estratégias valiosas para acelerar sua jornada digital. Este material complementa perfeitamente seu primeiro e-book!</p>
+            <p>➡️ Descubra como criar um funil de vendas eficiente.<br>➡️ Aprenda técnicas de tráfego pago.<br>➡️ Comece a ganhar dinheiro como afiliado de forma inteligente.</p>
+            <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=SEU-ID-UPSELL" target="_blank" class="botao-compra">
+                Quero este e-book por R$19,90
+            </a>
+            <p class="garantia">💡 Oferta única! Não perca esta oportunidade.</p>
+            <a href="./download-principal.html" class="botao-recusar">
+                Não, obrigado. Quero apenas meu e-book.
+            </a>
+        </div>
+    </section>
+</body>
+</html>
