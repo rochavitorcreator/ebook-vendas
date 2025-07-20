@@ -2,109 +2,21 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Cadastro para Garantir a Vaga</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro para Compra</title>
+    <link rel="stylesheet" href="css/cadastro.css">
 </head>
 <body>
-    <style>
-   /* Estilo geral da página */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-/* Caixa do formulário quase ocupando toda a tela */
-.form-box {
-    background: #1e1e1e;
-    padding: 40px 30px;
-    border-radius: 12px;
-    width: 95%;
-    max-width: 500px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
-    text-align: center;
-}
-
-/* Título maior e mais destacado */
-.form-box h1 {
-    margin-bottom: 25px;
-    font-size: 1.8rem;
-}
-
-/* Labels e campos */
-.form-box label {
-    display: block;
-    margin: 15px 0 5px;
-    font-size: 1rem;
-    text-align: left;
-}
-
-.form-box input {
-    width: 100%;
-    padding: 14px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 6px;
-    background: rgba(255, 255, 255, 0.1);
-    color: #fff;
-    font-size: 1rem;
-}
-
-.form-box input::placeholder {
-    color: #ccc;
-}
-
-/* Botão grande e chamativo */
-.form-box button {
-    width: 100%;
-    padding: 16px;
-    background-color: #00a650;
-    border: none;
-    border-radius: 8px;
-    color: #fff;
-    font-size: 1.1rem;
-    cursor: pointer;
-    margin-top: 15px;
-    transition: 0.3s;
-}
-
-.form-box button:hover {
-    background-color: #008f47;
-}
-
-/* Responsividade para telas menores ainda melhor */
-@media screen and (max-width: 500px) {
-    .form-box {
-        padding: 40px 20px;
-        width: 95%;
-    }
-
-    .form-box h1 {
-        font-size: 1.6rem;
-    }
-
-    .form-box button {
-        padding: 14px;
-        font-size: 1rem;
-    }
-}
-    </style>
-    <div class="landing">
-        <div class="ebook-container">
-            <h2>Preencha para continuar</h2>
-            <form action="https://formsubmit.co/official.vitorrocha@email.com" method="POST">
-                <input type="text" name="name" placeholder="Seu Nome" required style="width: 100%; padding: 10px; margin: 5px 0;">
-                <input type="email" name="email" placeholder="Seu E-mail" required style="width: 100%; padding: 10px; margin: 5px 0;">
-                <input type="tel" name="whatsapp" placeholder="Seu WhatsApp" required style="width: 100%; padding: 10px; margin: 5px 0;">
-                <button type="submit" href="https://mpago.li/2cJhcxB" class="btn-mercadopago">Prosseguir para Pagamento</button>
+    <div class="form-container">
+        <div class="form-box">
+            <h1>Preencha para continuar</h1>
+            <form action="download-principal.html" method="get">
+                <input type="text" name="nome" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu E-mail" required>
+                <input type="tel" name="whatsapp" placeholder="Seu WhatsApp" required>
+                <button type="submit">Prosseguir para Pagamento</button>
+                <a href="https://wa.me/5511952365439?text=Quero%20comprar%20o%20ebook%20via%20Pix" class="btn-whats">Pagar ebook Com Pix via WhatsApp</a>
             </form>
-            <a class="btn-whatsapp" href="https://wa.me/5511952365439">Pagar ebook Com Pix via WhatsApp</a>
         </div>
     </div>
 </body>
