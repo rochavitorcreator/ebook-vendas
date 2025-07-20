@@ -1,233 +1,119 @@
-/* Estilo Geral */
-body {
-    font-family: Arial, sans-serif;
-    background: #121212;
-    color: #fff;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Cabeçalho */
-.topo {
-    background: #007bff;
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #007bff;
     color: white;
     text-align: center;
-    padding: 2rem;
-}
-
-.topo h1 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-}
-
-.topo p {
+    padding: 1rem;
     font-size: 1.2rem;
 }
 
-/* Landing */
-.landing {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
+header h1 {
+    font-size: 1.4rem;
 }
 
-/* Container do E-book */
-.ebook-container {
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-    background: #1e1e1e;
-    padding: 2rem;
+header p {
+    font-size: 1rem;
+}
+
+.landing {
+    max-width: 500px;
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 1.5rem;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-    max-width: 1000px;
-    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .ebook-container img {
-    width: 300px;
+    width: 100%;
+    display: block;
+    margin: 0 auto 20px auto;
     border-radius: 8px;
-    max-width: 100%;
 }
 
 .ebook-info h2 {
-    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #222;
 }
 
 .ebook-info ul {
     list-style: none;
-    padding: 0;
-    margin-bottom: 1.5rem;
+    padding-left: 0;
 }
 
 .ebook-info li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 10px;
     font-size: 1rem;
 }
 
-/* Botões */
-button, .btn, .botao-compra {
-    background: #00a650;
-    color: white;
-    border: none;
-    padding: 15px 25px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
-    transition: 0.3s;
+.ebook-info li::before {
+    content: '✅ ';
 }
 
-button:hover, .btn:hover, .botao-compra:hover {
-    background: #008f47;
-}
-
-/* Rodapé */
-footer {
-    background: #1e1e1e;
-    color: #aaa;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-/* Formulário */
-body.cadastro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #121212;
-}
-
-.form-box {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(5px);
-    padding: 40px;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
-}
-
-.form-box input {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: none;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.1);
-    color: #fff;
-}
-
-.form-box input::placeholder {
-    color: #ccc;
-}
-
-.form-box a {
-    margin-top: 20px;
-    background: #007bff;
-    color: #fff;
-    padding: 12px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.form-box a:hover {
-    background: #0056b3;
-}
-
-/* Página de Download */
-.container-ebook {
-    text-align: center;
-    padding: 30px;
-    background-color: #111;
-    color: #fff;
-    border-radius: 10px;
-    max-width: 400px;
-    margin: 40px auto;
-    box-shadow: 0 0 10px rgba(0,0,0,0.6);
-    font-family: Arial, sans-serif;
-}
-
-.descricao {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    color: #ccc;
-    line-height: 1.4;
-}
-
-.imagem-ebook img {
-    width: 150px;
-    margin: 10px 0 20px 0;
-    border-radius: 6px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.4);
-}
-
-.preco {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    color: #00c86f;
-}
-
-.preco s {
-    color: #aaa;
-}
-
-.frase-final {
-    margin-top: 20px;
-    font-size: 0.9rem;
-    opacity: 0.8;
+.ebook-info p {
+    margin: 1rem 0;
+    font-size: 0.95rem;
+    color: #555;
 }
 
 .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #3b82f6;
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #28a745;
     color: white;
+    text-align: center;
     text-decoration: none;
-    border-radius: 5px;
     font-weight: bold;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: 0.3s;
 }
 
-/* Responsivo para Celular */
-@media screen and (max-width: 768px) {
+.btn:hover {
+    background-color: #218838;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.85rem;
+    color: #777;
+}
+
+@media (min-width: 768px) {
+    header {
+        font-size: 1.4rem;
+    }
+
     .landing {
-        flex-direction: column;
-        padding: 1rem;
-    }
-
-    .ebook-container {
-        flex-direction: column;
-        padding: 1rem;
-        gap: 1rem;
-    }
-
-    .ebook-container img {
-        width: 100%;
-        height: auto;
-    }
-
-    .topo {
-        padding: 1.5rem;
-    }
-
-    .topo h1 {
-        font-size: 1.5rem;
-    }
-
-    .topo p {
-        font-size: 1rem;
+        max-width: 700px;
+        padding: 2rem;
     }
 
     .ebook-info h2 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .ebook-info li {
-        font-size: 0.95rem;
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        width: 60%;
+        margin: 20px auto 0 auto;
     }
 }
