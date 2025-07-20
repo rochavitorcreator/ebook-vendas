@@ -2,201 +2,160 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Oferta Especial - Upsell</title>
-    <link rel="stylesheet" href="css/style.css">
-    
-     <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Arial', sans-serif;
-    }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta Especial</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
-    body {
-        background-color: #0d0d0d;
-        color: #f5f5f5;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        padding: 30px 20px;
-    }
+        body {
+            background-color: #0d0d0d;
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-    .container {
-        width: 100%;
-        max-width: 420px;
-        background: rgba(10, 10, 10, 0.85);
-        border-radius: 20px;
-        padding: 35px 25px;
-        box-shadow: 0 0 25px rgba(0, 0, 0, 0.9);
-        text-align: center;
-        backdrop-filter: blur(10px);
-        transition: all 0.3s ease;
-    }
-
-    .container:hover {
-        transform: scale(1.01);
-    }
-
-    h1, h2 {
-        font-size: 1.6rem;
-        color: #00ff88;
-        margin-bottom: 15px;
-        line-height: 1.3;
-    }
-
-    p {
-        font-size: 1rem;
-        color: #c2c2c2;
-        margin-bottom: 20px;
-        line-height: 1.6;
-    }
-
-    a.btn, button {
-        display: block;
-        width: 100%;
-        padding: 15px;
-        margin-top: 20px;
-        background-color: #00cc66;
-        color: #ffffff;
-        font-weight: 700;
-        border: none;
-        border-radius: 12px;
-        text-decoration: none;
-        font-size: 1.05rem;
-        transition: 0.3s;
-    }
-
-    a.btn:hover, button:hover {
-        background-color: #00b359;
-        transform: scale(1.02);
-    }
-
-    input {
-        width: 100%;
-        padding: 14px;
-        border-radius: 10px;
-        border: none;
-        margin-bottom: 18px;
-        background: rgba(255, 255, 255, 0.1);
-        color: #fff;
-        font-size: 1rem;
-    }
-
-    input::placeholder {
-        color: #aaa;
-    }
-
-    .product {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .product img {
-        max-width: 200px;
-        border-radius: 12px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-    }
-
-    .product p {
-        color: #ccc;
-        font-size: 0.95rem;
-        text-align: center;
-    }
-
-    .upsell {
-        text-align: left;
-        margin-top: 20px;
-    }
-
-    .upsell h2 {
-        color: #00cc66;
-        font-size: 1.25rem;
-        margin-bottom: 10px;
-    }
-
-    .upsell p {
-        color: #aaa;
-        font-size: 0.95rem;
-        margin-bottom: 15px;
-    }
-
-    .upsell ul {
-        list-style: none;
-        padding-left: 0;
-        color: #ccc;
-        margin-bottom: 20px;
-        line-height: 1.5;
-    }
-
-    .upsell ul li::before {
-        content: "✅ ";
-        color: #00ff88;
-    }
-
-    .link-plain {
-        display: block;
-        margin-top: 15px;
-        font-size: 0.9rem;
-        color: #888;
-        text-decoration: underline;
-        text-align: center;
-    }
-
-    .cta {
-        background-color: #00ff88;
-        color: #0d0d0d;
-        font-weight: bold;
-        padding: 15px;
-        border-radius: 12px;
-        display: inline-block;
-        width: 100%;
-        margin-top: 20px;
-        transition: 0.3s;
-        text-decoration: none;
-        text-align: center;
-    }
-
-    .cta:hover {
-        background-color: #00cc66;
-    }
-
-    @media (min-width: 768px) {
         .container {
-            padding: 50px;
-            max-width: 460px;
+            max-width: 450px;
+            background-color: #121212;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
         }
 
-        .product img {
-            max-width: 220px;
+        h1 {
+            text-align: center;
+            color: #00ff88;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
         }
-    }
-</style>
-   
+
+        .content {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .content img {
+            width: 120px;
+            border-radius: 8px;
+            border: 2px solid #00ff88;
+        }
+
+        .info {
+            flex: 1;
+        }
+
+        .info h2 {
+            font-size: 1rem;
+            color: #00ff88;
+            margin-bottom: 10px;
+        }
+
+        .info p {
+            font-size: 0.95rem;
+            color: #ccc;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .info strong {
+            color: #ffffff;
+            font-size: 1rem;
+        }
+
+        ul {
+            margin: 15px 0;
+            padding-left: 20px;
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+            list-style: none;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        ul li::before {
+            content: "✅";
+            position: absolute;
+            left: 0;
+            color: #00ff88;
+        }
+
+        a.cta {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #00cc66;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: 0.3s;
+            margin-top: 20px;
+        }
+
+        a.cta:hover {
+            background-color: #00b359;
+        }
+
+        .link-plain {
+            display: block;
+            margin-top: 15px;
+            font-size: 0.85rem;
+            color: #888;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 500px) {
+            .content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .content img {
+                margin-bottom: 10px;
+            }
+
+            .info {
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
-    <section class="upsell-container">
-        <div class="imagem-ebook">
-            <img src="./assets/capa-ebook.png" alt="Capa do Ebook">
+    <div class="container">
+        <h1>🚀 Acelere Seus Resultados!</h1>
+
+        <div class="content">
+            <img src="https://via.placeholder.com/120x160.png?text=Ebook" alt="Ebook">
+            <div class="info">
+                <h2>Material Exclusivo!</h2>
+                <p>Por apenas <strong>R$19,90</strong>, você terá acesso a estratégias valiosas para acelerar sua jornada digital. Este material complementa perfeitamente seu primeiro e-book!</p>
+            </div>
         </div>
 
-        <div class="conteudo-ebook">
-            <h1>🚀 Acelere Seus Resultados com Este Material Exclusivo!</h1>
-            <p>Por apenas <strong>R$19,90</strong>, você terá acesso a estratégias valiosas para acelerar sua jornada digital. Este material complementa perfeitamente seu primeiro e-book!</p>
-            <p>➡️ Descubra como criar um funil de vendas eficiente.<br>➡️ Aprenda técnicas de tráfego pago.<br>➡️ Comece a ganhar dinheiro como afiliado de forma inteligente.</p>
-            <a href="https://mpago.li/1pkDzRr" target="_blank" class="botao-compra">
-                Quero este e-book por R$19,90
-            </a>
-            <p class="garantia">💡 Oferta única! Não perca esta oportunidade.</p>
-            <a href="./download-principal.html" class="botao-recusar">
-                Não, obrigado. Quero apenas meu e-book.
-            </a>
-        </div>
-    </section>
+        <ul>
+            <li>Descubra como criar um funil eficiente.</li>
+            <li>Aprenda técnicas de tráfego pago.</li>
+            <li>Comece a lucrar como afiliado de forma inteligente.</li>
+        </ul>
+
+        <a href="https://mpago.li/2cJhcxB" class="cta">Quero este e-book por R$19,90</a>
+        <a href="#" class="link-plain">Não, obrigado. Quero apenas meu e-book.</a>
+    </div>
 </body>
 </html>
