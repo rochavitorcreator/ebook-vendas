@@ -83,6 +83,146 @@
         .botao-recusar:hover {
             color: #f0f6fc;
         }
+        <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background-color: #0d0d0d;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 400px;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 15px;
+        padding: 25px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+        text-align: center;
+        backdrop-filter: blur(10px);
+    }
+
+    h1, h2 {
+        font-size: 1.4rem;
+        color: #00ff88;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 0.95rem;
+        color: #ccc;
+        margin-bottom: 20px;
+        line-height: 1.4;
+    }
+
+    a.btn, button {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        margin-top: 15px;
+        background-color: #00b300;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: 0.3s;
+        font-size: 1rem;
+    }
+
+    a.btn:hover, button:hover {
+        background-color: #019401;
+    }
+
+    input {
+        width: 100%;
+        padding: 12px;
+        border-radius: 8px;
+        border: none;
+        margin-bottom: 15px;
+        background: rgba(255, 255, 255, 0.1);
+        color: #fff;
+    }
+
+    input::placeholder {
+        color: #ccc;
+    }
+
+    .small {
+        font-size: 0.8rem;
+        color: #777;
+        margin-top: 10px;
+    }
+
+    .product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    .product img {
+        max-width: 150px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .product p {
+        color: #ccc;
+        font-size: 0.9rem;
+    }
+
+    .upsell {
+        text-align: left;
+    }
+
+    .upsell h2 {
+        color: #00b300;
+        font-size: 1.2rem;
+    }
+
+    .upsell p {
+        color: #aaa;
+        font-size: 0.9rem;
+    }
+
+    .upsell ul {
+        list-style: none;
+        padding-left: 0;
+        color: #ccc;
+        margin-bottom: 20px;
+    }
+
+    .upsell ul li::before {
+        content: "✅ ";
+        color: #00b300;
+    }
+
+    .link-plain {
+        display: block;
+        margin-top: 10px;
+        font-size: 0.8rem;
+        color: #888;
+        text-decoration: underline;
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            padding: 40px;
+            max-width: 420px;
+        }
+    }
+</style>
     </style>
 </head>
 <body>
