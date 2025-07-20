@@ -1,11 +1,4 @@
-/* RESET BÁSICO */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-/* ESTILO PADRÃO */
+/* Estilo Geral */
 body {
     font-family: Arial, sans-serif;
     background: #121212;
@@ -14,7 +7,7 @@ body {
     padding: 0;
 }
 
-/* TOPO */
+/* Cabeçalho */
 .topo {
     background: #007bff;
     color: white;
@@ -31,7 +24,7 @@ body {
     font-size: 1.2rem;
 }
 
-/* PÁGINA INICIAL */
+/* Landing */
 .landing {
     display: flex;
     justify-content: center;
@@ -39,6 +32,7 @@ body {
     padding: 2rem;
 }
 
+/* Container do E-book */
 .ebook-container {
     display: flex;
     gap: 2rem;
@@ -47,11 +41,14 @@ body {
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    max-width: 1000px;
+    width: 100%;
 }
 
 .ebook-container img {
     width: 300px;
     border-radius: 8px;
+    max-width: 100%;
 }
 
 .ebook-info h2 {
@@ -69,9 +66,8 @@ body {
     font-size: 1rem;
 }
 
-/* BOTÕES */
-button,
-.btn {
+/* Botões */
+button, .btn, .botao-compra {
     background: #00a650;
     color: white;
     border: none;
@@ -82,15 +78,13 @@ button,
     text-decoration: none;
     display: inline-block;
     transition: 0.3s;
-    text-align: center;
 }
 
-button:hover,
-.btn:hover {
+button:hover, .btn:hover, .botao-compra:hover {
     background: #008f47;
 }
 
-/* FOOTER */
+/* Rodapé */
 footer {
     background: #1e1e1e;
     color: #aaa;
@@ -99,7 +93,7 @@ footer {
     margin-top: 2rem;
 }
 
-/* FORMULÁRIOS */
+/* Formulário */
 body.cadastro {
     display: flex;
     justify-content: center;
@@ -133,20 +127,20 @@ body.cadastro {
 }
 
 .form-box a {
-    display: inline-block;
     margin-top: 20px;
     background: #007bff;
     color: #fff;
     padding: 12px 20px;
     border-radius: 5px;
     text-decoration: none;
+    display: inline-block;
 }
 
 .form-box a:hover {
     background: #0056b3;
 }
 
-/* BOTÃO PARA BAIXAR E-BOOK */
+/* Página de Download */
 .container-ebook {
     text-align: center;
     padding: 30px;
@@ -156,6 +150,7 @@ body.cadastro {
     max-width: 400px;
     margin: 40px auto;
     box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    font-family: Arial, sans-serif;
 }
 
 .descricao {
@@ -172,21 +167,6 @@ body.cadastro {
     box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
-.botao-compra {
-    background-color: #00c86f;
-    color: white;
-    border: none;
-    padding: 12px 30px;
-    font-size: 1.1rem;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.botao-compra:hover {
-    background-color: #02a357;
-}
-
 .preco {
     font-size: 1.2rem;
     margin-bottom: 20px;
@@ -201,4 +181,53 @@ body.cadastro {
     margin-top: 20px;
     font-size: 0.9rem;
     opacity: 0.8;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3b82f6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Responsivo para Celular */
+@media screen and (max-width: 768px) {
+    .landing {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .ebook-container {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .ebook-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .topo {
+        padding: 1.5rem;
+    }
+
+    .topo h1 {
+        font-size: 1.5rem;
+    }
+
+    .topo p {
+        font-size: 1rem;
+    }
+
+    .ebook-info h2 {
+        font-size: 1.2rem;
+    }
+
+    .ebook-info li {
+        font-size: 0.95rem;
+    }
 }
