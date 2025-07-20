@@ -2,118 +2,133 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    background-color: #f5f5f5;
+    background-color: #f7f7f7;
     color: #333;
-    line-height: 1.6;
 }
 
 header {
-    background-color: #007bff;
-    color: white;
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
     text-align: center;
-    padding: 1rem;
-    font-size: 1.2rem;
 }
 
 header h1 {
-    font-size: 1.4rem;
-}
-
-header p {
-    font-size: 1rem;
-}
-
-.landing {
-    max-width: 500px;
-    background-color: #fff;
-    margin: 20px auto;
-    padding: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.ebook-container img {
-    width: 100%;
-    display: block;
-    margin: 0 auto 20px auto;
-    border-radius: 8px;
-}
-
-.ebook-info h2 {
     font-size: 1.2rem;
     margin-bottom: 10px;
-    color: #222;
 }
 
-.ebook-info ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.ebook-info li {
-    margin-bottom: 10px;
-    font-size: 1rem;
-}
-
-.ebook-info li::before {
-    content: '✅ ';
-}
-
-.ebook-info p {
-    margin: 1rem 0;
-    font-size: 0.95rem;
-    color: #555;
-}
-
-.btn {
+.cta-button {
     display: block;
-    width: 100%;
-    padding: 1rem;
-    background-color: #28a745;
-    color: white;
+    width: 90%;
+    max-width: 320px;
+    margin: 10px auto;
+    padding: 15px;
     text-align: center;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 1.1rem;
     border-radius: 8px;
-    margin-top: 20px;
+    font-weight: bold;
     transition: 0.3s;
 }
 
-.btn:hover {
-    background-color: #218838;
+.pagemento {
+    background-color: #3483fa;
+    color: #fff;
+}
+
+.pagemento:hover {
+    background-color: #1f5fcc;
+}
+
+.whatsapp {
+    background-color: #00b300;
+    color: #fff;
+}
+
+.whatsapp:hover {
+    background-color: #029802;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #111;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+ul li::before {
+    content: '✅ ';
+    color: #00b300;
+}
+
+.ebook-image {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.highlight {
+    color: #00b300;
+    font-weight: bold;
+}
+
+.faq {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 8px;
 }
 
 footer {
     text-align: center;
-    padding: 1rem;
-    font-size: 0.85rem;
-    color: #777;
+    padding: 20px;
+    color: #999;
+    font-size: 0.9rem;
 }
 
+/* Desktop Ajuste */
 @media (min-width: 768px) {
-    header {
-        font-size: 1.4rem;
+    header h1 {
+        font-size: 1.8rem;
     }
 
-    .landing {
-        max-width: 700px;
-        padding: 2rem;
+    .cta-button {
+        max-width: 400px;
+        font-size: 1.2rem;
     }
 
-    .ebook-info h2 {
-        font-size: 1.5rem;
+    h2 {
+        font-size: 1.7rem;
     }
 
-    .ebook-info li {
+    ul li {
         font-size: 1.1rem;
-    }
-
-    .btn {
-        width: 60%;
-        margin: 20px auto 0 auto;
     }
 }
