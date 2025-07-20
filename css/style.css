@@ -6,7 +6,104 @@ body {
     background-color: #111;
     color: #fff;
 }
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro para Compra</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
+        body {
+            background: linear-gradient(to right, #000000, #1c1c1c);
+            font-family: Arial, sans-serif;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form-container {
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 400px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.6);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            padding: 12px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+
+        input::placeholder {
+            color: #ccc;
+        }
+
+        .btn-pagamento {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #00b300;
+            transition: 0.3s;
+        }
+
+        .btn-pagamento:hover {
+            background-color: #019401;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Preencha para continuar</h1>
+        <form>
+            <input type="text" name="nome" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu E-mail" required>
+            <input type="tel" name="whatsapp" placeholder="Seu WhatsApp" required>
+        </form>
+
+        <a href="https://mpago.li/2cJhcxB" class="btn-pagamento" target="_blank">
+            Prosseguir para o Pagamento
+        </a>
+
+        <a href="https://wa.me/5511952365439?text=Quero%20comprar%20o%20ebook%20via%20Pix" class="btn-pagamento">
+            Pagar ebook Com Pix via WhatsApp
+        </a>
+    </div>
+
+</body>
+</html>
 /* Cabeçalho */
 .topo {
     background-color: #007bff;
