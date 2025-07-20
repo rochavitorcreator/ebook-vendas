@@ -6,6 +6,101 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <style>
+        /* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 1.6rem;
+}
+
+.landing {
+    max-width: 500px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.landing h2 {
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.landing p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.landing form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-mercadopago, .btn-whatsapp {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.btn-mercadopago {
+    background-color: #00c853;
+    color: #fff;
+}
+
+.btn-whatsapp {
+    background-color: #25D366;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #777;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.3rem;
+    }
+
+    .landing {
+        padding: 15px;
+    }
+}
+    </style>
     <div class="landing">
         <div class="ebook-container">
             <h2>Preencha para continuar</h2>
