@@ -2,24 +2,21 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Cadastro</title>
+    <title>Cadastro para Garantir a Vaga</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="cadastro">
-    <div class="form-box">
-        <h1>Preencha seus dados para continuar</h1>
-        <form action="confirmacao.html" method="get">
-            <label for="nome">Nome completo</label>
-            <input type="text" id="nome" name="nome" required>
-
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="whatsapp">WhatsApp</label>
-            <input type="text" id="whatsapp" name="whatsapp" required>
-
-            <button type="submit">Continuar para Pagamento</button>
-        </form>
+<body>
+    <div class="landing">
+        <div class="ebook-container">
+            <h2>Preencha para continuar</h2>
+            <form action="https://formsubmit.co/official.vitorrocha@email.com" method="POST">
+                <input type="text" name="name" placeholder="Seu Nome" required style="width: 100%; padding: 10px; margin: 5px 0;">
+                <input type="email" name="email" placeholder="Seu E-mail" required style="width: 100%; padding: 10px; margin: 5px 0;">
+                <input type="tel" name="whatsapp" placeholder="Seu WhatsApp" required style="width: 100%; padding: 10px; margin: 5px 0;">
+                <button type="submit" class="btn-mercadopago">Prosseguir para Pagamento</button>
+            </form>
+            <a class="btn-whatsapp" href="https://wa.me/55951365439text=Quero%20comprar%20o%20E-book!">Falar com Suporte no WhatsApp</a>
+        </div>
     </div>
 </body>
 </html>
