@@ -1,3 +1,4 @@
+/* Estilo Global */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,6 +7,7 @@ body {
     color: #fff;
 }
 
+/* Cabeçalho */
 .topo {
     background-color: #007bff;
     color: #fff;
@@ -23,6 +25,7 @@ body {
     font-size: 0.9em;
 }
 
+/* Principal */
 .landing {
     display: flex;
     flex-direction: column;
@@ -46,6 +49,7 @@ body {
     border-radius: 5px;
 }
 
+/* Conteúdo */
 .ebook-info ul {
     padding: 0;
     list-style: none;
@@ -63,6 +67,7 @@ body {
     margin-bottom: 10px;
 }
 
+/* Botões */
 .btn-mercadopago,
 .btn-whatsapp {
     display: block;
@@ -85,6 +90,7 @@ body {
     color: #fff;
 }
 
+/* Rodapé */
 footer {
     background-color: #000;
     color: #777;
@@ -93,6 +99,7 @@ footer {
     font-size: 0.8em;
 }
 
+/* Responsivo */
 @media (min-width: 768px) {
     .ebook-container {
         max-width: 500px;
