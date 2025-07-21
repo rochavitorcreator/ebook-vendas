@@ -2,97 +2,98 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <title>Cadastro para Download</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro para Compra</title>
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
         body {
-            background: linear-gradient(to right, #000000, #1c1c1c);
-            font-family: Arial, sans-serif;
+            background-color: #0d0d0d;
             color: #fff;
-            height: 100vh;
+            font-family: Arial, sans-serif;
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
         }
 
-        .form-container {
-            background: rgba(0, 0, 0, 0.6);
-            backdrop-filter: blur(10px);
-            padding: 30px;
+        .container {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 40px;
             border-radius: 15px;
-            width: 90%;
             max-width: 400px;
+            width: 100%;
             box-shadow: 0 0 10px rgba(0,0,0,0.6);
+            backdrop-filter: blur(5px);
         }
 
         h1 {
+            color: #00ff88;
             text-align: center;
             margin-bottom: 20px;
             font-size: 1.5rem;
         }
 
-        form {
-            display: flex;
-            flex-direction: column;
+        p {
+            color: #ccc;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
         }
 
         input {
+            width: 100%;
             padding: 12px;
-            margin-bottom: 15px;
-            border: none;
             border-radius: 8px;
+            border: none;
+            margin-bottom: 15px;
             background: rgba(255, 255, 255, 0.1);
             color: #fff;
+            font-size: 0.95rem;
         }
 
         input::placeholder {
-            color: #ccc;
+            color: #aaa;
         }
 
-        .btn-pagamento {
-            display: block;
+        button {
             width: 100%;
             padding: 15px;
-            margin: 10px 0;
-            border-radius: 8px;
-            text-align: center;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1rem;
-            color: #fff;
             background-color: #00b300;
+            border: none;
+            color: #fff;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
             transition: 0.3s;
+            font-size: 1rem;
         }
 
-        .btn-pagamento:hover {
+        button:hover {
             background-color: #019401;
+        }
+
+        .small {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #888;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
 
-    <div class="form-container">
-        <h1>Preencha para continuar</h1>
-        <form>
-            <input type="text" name="nome" placeholder="Seu Nome" required>
-            <input type="email" name="email" placeholder="Seu E-mail" required>
-            <input type="tel" name="whatsapp" placeholder="Seu WhatsApp" required>
-        </form>
+<div class="container">
+    <h1>Antes de Prosseguir...</h1>
+    <p>Complete seu cadastro para liberar seu acesso.</p>
 
-        <a href="https://mpago.li/2cJhcxB" class="btn-pagamento" target="_blank">
-            Prosseguir para o Pagamento
-        </a>
+    <form action="https://mpago.li/2cJhcxB" method="GET">
+        <input type="text" name="nome" placeholder="Seu Nome" required>
+        <input type="email" name="email" placeholder="Seu Melhor E-mail" required>
+        <button type="submit">Prosseguir para o Pagamento</button>
+    </form>
 
-        <a href="https://wa.me/5511952365439?text=Quero%20comprar%20o%20ebook%20via%20Pix" class="btn-pagamento">
-            Pagar ebook Com Pix via WhatsApp
-        </a>
-    </div>
+    <p class="small">Seus dados estão 100% seguros. Não enviamos spam.</p>
+</div>
 
 </body>
 </html>
