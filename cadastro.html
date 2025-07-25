@@ -83,12 +83,19 @@
 
   <div class="container">
     <h1>Antes de Prosseguir...</h1>
-    <p>Complete seu cadastro para liberar seu acesso ao E-book.</p>
+    <p>Complete seu cadastro para liberar o acesso ao E-book.</p>
 
-    <!-- Ao enviar, leva para confirmacao.html -->
     <form action="confirmacao.html" method="GET">
+
+      <!-- Campo Nome -->
       <input type="text" name="nome" placeholder="Seu Nome" required>
+
+      <!-- Campo E-mail -->
       <input type="email" name="email" placeholder="Seu Melhor E-mail" required>
+
+      <!-- Campo WhatsApp -->
+      <input type="tel" name="whatsapp" placeholder="Seu WhatsApp com DDD" required>
+
       <button type="submit">Prosseguir para o Pagamento</button>
     </form>
 
