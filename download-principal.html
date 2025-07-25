@@ -3,51 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <title>Seu E-book Principal</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
         body {
             background-color: #121212;
             color: #fff;
             display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
-            height: 100vh;
-            font-family: Arial, sans-serif;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
         }
 
         .container {
             background-color: #1e1e1e;
-            padding: 40px;
-            border-radius: 10px;
+            padding: 30px 20px;
+            border-radius: 15px;
             text-align: center;
-            max-width: 500px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
         }
 
         h1 {
-            color: #00c86f;
+            color: #00ff88;
+            font-size: 1.8rem;
             margin-bottom: 20px;
         }
 
         p {
-            margin-bottom: 20px;
             color: #ccc;
+            font-size: 1.1rem;
+            line-height: 1.5;
+            margin-bottom: 30px;
         }
 
         .btn {
             display: block;
-            margin: 10px auto;
-            background-color: #3fb950;
+            background-color: #00b300;
             color: #fff;
-            padding: 12px 20px;
-            border-radius: 5px;
+            padding: 18px;
+            border-radius: 10px;
             text-decoration: none;
-            width: 80%;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: background 0.3s;
         }
 
         .btn:hover {
-            background-color: #2ea043;
+            background-color: #019401;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                padding: 50px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
         }
     </style>
 </head>
@@ -56,7 +81,5 @@
         <h1>📥 Baixe seu E-book</h1>
         <p>Obrigado por sua compra! Aqui está seu e-book principal para começar sua jornada digital.</p>
 
-        <a href="https://drive.google.com/file/d/1fbIA8ql6itu9tvFoT3AM6tyMfRy_f-HJ/view?usp=drive_link" target="_blank" class="btn">📥 Baixar E-book Principal</a>
-    </div>
-</body>
-</html>
+        <a href="https://drive.google.com/file/d/1fbIA8ql6itu9tvFoT3AM6tyMfRy_f-HJ/view?usp=drive_link" 
+           target="_blank
