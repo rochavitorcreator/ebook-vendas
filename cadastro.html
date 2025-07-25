@@ -1,99 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Cadastro para Download</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            background-color: #0d0d0d;
-            color: #fff;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            padding: 20px;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro Confirmado</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0d0d0d;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
 
-        .container {
-            background: rgba(0, 0, 0, 0.8);
-            padding: 40px;
-            border-radius: 15px;
-            max-width: 400px;
-            width: 100%;
-            box-shadow: 0 0 10px rgba(0,0,0,0.6);
-            backdrop-filter: blur(5px);
-        }
+    .box {
+      background-color: #1a1a1a;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      max-width: 450px;
+      width: 90%;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    }
 
-        h1 {
-            color: #00ff88;
-            text-align: center;
-            margin-bottom: 20px;
-            font-size: 1.5rem;
-        }
+    h1 {
+      font-size: 1.6rem;
+      color: #00ff88;
+      margin-bottom: 15px;
+    }
 
-        p {
-            color: #ccc;
-            text-align: center;
-            margin-bottom: 20px;
-            font-size: 0.95rem;
-        }
+    p {
+      color: #ccc;
+      margin-bottom: 20px;
+      font-size: 1rem;
+    }
 
-        input {
-            width: 100%;
-            padding: 12px;
-            border-radius: 8px;
-            border: none;
-            margin-bottom: 15px;
-            background: rgba(255, 255, 255, 0.1);
-            color: #fff;
-            font-size: 0.95rem;
-        }
+    /* Botão manual (fallback) */
+    .btn-pagamento {
+      display: inline-block;
+      background-color: #00b300;
+      color: #fff;
+      padding: 14px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      margin-bottom: 20px;
+    }
 
-        input::placeholder {
-            color: #aaa;
-        }
+    .btn-pagamento:hover {
+      background-color: #019401;
+    }
 
-        button {
-            width: 100%;
-            padding: 15px;
-            background-color: #00b300;
-            border: none;
-            color: #fff;
-            border-radius: 8px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: 0.3s;
-            font-size: 1rem;
-        }
-
-        button:hover {
-            background-color: #019401;
-        }
-
-        .small {
-            text-align: center;
-            font-size: 0.8rem;
-            color: #888;
-            margin-top: 10px;
-        }
-    </style>
+    /* Espaço do botão Mercado Pago */
+    #mp-button {
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
 
-<div class="container">
-    <h1>Antes de Prosseguir...</h1>
-    <p>Complete seu cadastro para liberar seu acesso.</p>
-    
-<form action="confirmacao.html" method="GET">
-    <input type="text" name="nome" placeholder="Seu Nome" required>
-    <input type="email" name="email" placeholder="Seu Melhor E-mail" required>
-    <button type="submit">Prosseguir para o Pagamento</button>
-</form>
+  <div class="box">
+    <h1>Cadastro Confirmado ✅</h1>
+    <p>Agora clique abaixo para realizar o pagamento e liberar o acesso ao seu E-book:</p>
 
-    <p class="small">Seus dados estão 100% seguros. Não enviamos spam.</p>
-</div>
+    <!-- Botão manual caso queira -->
+    <a href="https://mpago.li/1snoUGa" class="btn-pagamento">Prosseguir para Pagamento</a>
+
+    <!-- Botão oficial do Mercado Pago -->
+    <div id="mp-button">
+      <script
+        src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
+        data-preference-id="SEU-ID-DE-PAGAMENTO-AQUI"
+        data-source="button">
+      </script>
+    </div>
+  </div>
 
 </body>
 </html>
